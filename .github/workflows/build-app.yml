@@ -65,8 +65,8 @@ jobs:
           path: app/build/outputs/bundle/release/app-release.aab
 
        - name: Upload APKs
-        uses: actions/upload-artifact@v3 
-        with: 
+        uses: actions/upload-artifact@v3
+        with:
            name: TestApps.apks
            path: ${{ steps.convert_aab.outputs.apkPath }}
 
