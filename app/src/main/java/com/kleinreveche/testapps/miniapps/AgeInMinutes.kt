@@ -61,7 +61,7 @@ class AgeInMinutes : AppCompatActivity() {
                        val currentDateInMinutes = currentDate.time / 60000
                        val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
                        val selectedDateInHours = differenceInMinutes / 60
-                       val currentDateInDays = selectedDateInHours / 24
+                       val selectedDateInDays = selectedDateInHours / 24
 
                        tvSelectedDate?.text = selectedDate
                        tvSelectedDateInMinutes?.text = differenceInMinutes.toString()
