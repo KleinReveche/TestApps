@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/ic_bg"
-    android:paddingTop="160dp"
+    android:paddingTop="80dp"
     tools:context=".miniapps.AgeInMinutes"
     >
 
@@ -23,7 +23,7 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="550dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@color/white"
@@ -57,9 +57,10 @@
                 android:gravity="center"
                 android:text="@string/age_calc_subtitle"
                 android:textColor="@color/pixel_blue"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:paddingBottom="30dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
                 tools:layout_conversion_absoluteHeight="34dp"
                 tools:layout_conversion_absoluteWidth="371dp"
                 tools:layout_editor_absoluteX="20dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/age_calc_datepicker"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvSelectedDate"
