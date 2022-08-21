@@ -37,7 +37,7 @@ class AgeInMinutes : AppCompatActivity() {
         val currentDay = myCalendar.get(Calendar.DAY_OF_MONTH)
 
         val dpd = DatePickerDialog(this,
-            { view, selectedYear, selectedMonth, SelectedDay ->
+            { _, selectedYear, selectedMonth, SelectedDay ->
                 Toast.makeText(this,
                     "Selected Birthdate is 0${selectedMonth + 1}/$SelectedDay/$selectedYear",
                     Toast.LENGTH_LONG).show()
