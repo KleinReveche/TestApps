@@ -14,6 +14,8 @@ class AgeInMinutes : AppCompatActivity() {
 
     private var tvSelectedDate : TextView? = null
     private var tvSelectedDateInMinutes : TextView? = null
+    private var tvSelectedDateInHours : TextView? = null
+    private var tvSelectedDateInDays : TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +23,8 @@ class AgeInMinutes : AppCompatActivity() {
 
         tvSelectedDate = findViewById(R.id.tvSelectedDate)
         tvSelectedDateInMinutes = findViewById(R.id.tvSelectedDateInMinutes)
+        tvSelectedDateInHours = findViewById(R.id.tvSelectedDateInHours)
+        tvSelectedDateInDays = findViewById(R.id.tvSelectedDateInDays)
 
         val btnBirthdatePicker : Button = findViewById(R.id.btnBirthdatePicker)
         btnBirthdatePicker.setOnClickListener{
@@ -35,6 +39,9 @@ class AgeInMinutes : AppCompatActivity() {
         val currentYear = myCalendar.get(Calendar.YEAR)
         val currentMonth = myCalendar.get(Calendar.MONTH)
         val currentDay = myCalendar.get(Calendar.DAY_OF_MONTH)
+
+
+// Change this to MaterialDatePickerDialog
 
         val dpd = DatePickerDialog(this,
             { _, selectedYear, selectedMonth, SelectedDay ->
@@ -53,9 +60,13 @@ class AgeInMinutes : AppCompatActivity() {
                    currentDate?.let {
                        val currentDateInMinutes = currentDate.time / 60000
                        val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
+                       val selectedDateInHours = differenceInMinutes.time / 60
+                       val currentDateInDays = selectedDateInHours.time / 24
 
                        tvSelectedDate?.text = selectedDate
                        tvSelectedDateInMinutes?.text = differenceInMinutes.toString()
+                       tvSelectedDateInHours?.text = selectedDateInHours.toString()
+                       tvSelectedDateInDays?.text = selectedDateInDays.toString()
                    }
                }
 
