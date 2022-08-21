@@ -49,9 +49,9 @@ jobs:
 
 
       - name: Create APKs
-         id: convert_aab
-         uses: mukeshsolanki/bundletool-action@v1.0.0
-         with:
+           id: convert_aab
+           uses: mukeshsolanki/bundletool-action@v1.0.0
+           with:
            aabFile: app/build/outputs/bundle/release/app-release.aab
            base64Keystore: ${{ secrets.SIGN_KEY }}
            keystoreAlias: ${{ secrets.ALIAS }}
