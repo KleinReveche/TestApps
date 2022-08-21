@@ -64,7 +64,7 @@ jobs:
           name: TestApps.aab
           path: app/build/outputs/bundle/release/app-release.aab
 
-       - name: Upload APKs
+      - name: Upload APKs
         uses: actions/upload-artifact@v3
         with:
            name: TestApps.apks
