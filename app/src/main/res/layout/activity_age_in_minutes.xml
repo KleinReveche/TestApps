@@ -124,7 +124,7 @@
                 android:textSize="18sp" />
 
          <TextView
-               android:id="@+id/tvSelectedDateInHours"
+               android:id="@+id/tvSelectedDateInDays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age in Days"
-                android:textColor="@color/lightGreyTextColor"
+                android:textColor="@color/lightBlueTextColor"
                 android:textSize="18sp" />
 
         </LinearLayout>
