@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Selected Date"
-                android:textColor="@color/lightBlueTextColor"
+                android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
             <TextView
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age in Minutes"
-                android:textColor="@color/lightBlueTextColor"
+                android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
          <TextView
@@ -123,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age in Hours"
-                android:textColor="@color/lightBlueTextColor"
+                android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
          <TextView
@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text="Age in Days"
-                android:textColor="@color/lightBlueTextColor"
+                android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
         </LinearLayout>
