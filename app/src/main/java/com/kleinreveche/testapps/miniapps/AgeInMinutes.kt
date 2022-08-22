@@ -19,7 +19,7 @@ class AgeInMinutes : AppCompatActivity() {
 
     private val sdf = SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH)
     private val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
-    private val currentDateInMinutes? = currentDate.time / 60000
+    private val currentDateInMinutes = currentDate.time / 60000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
