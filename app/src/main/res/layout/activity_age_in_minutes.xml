@@ -42,7 +42,7 @@
             android:orientation="vertical" 
             android:gravity="center"> 
             
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -57,22 +57,6 @@
                 tools:layout_editor_absoluteX="20dp"
                 tools:layout_editor_absoluteY="194dp" />
 
-            <!-- TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/age_calc_subtitle"
-                android:textColor="@color/pixel_blue"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:paddingTop="5dp"
-                android:paddingBottom="15dp"
-                tools:layout_conversion_absoluteHeight="34dp"
-                tools:layout_conversion_absoluteWidth="371dp"
-                tools:layout_editor_absoluteX="20dp"
-                tools:layout_editor_absoluteY="194dp" /-->
-
-
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.Material3.Button.Icon"
                 app:icon="@drawable/round_calendar_month_24dp"
@@ -83,7 +67,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvSelectedDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,14 +76,14 @@
                 android:textColor="@color/lightGreenTextColor"
                 android:textSize="20sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Selected Date"
                 android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                android:id="@+id/tvSelectedDateInMinutes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -108,14 +92,14 @@
                 android:textColor="@color/lightGreenTextColor"
                 android:textSize="35sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age in Minutes"
                 android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
-         <TextView
+         <com.google.android.material.textview.MaterialTextView
                android:id="@+id/tvSelectedDateInHours"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -124,14 +108,14 @@
                 android:textColor="@color/lightGreenTextColor"
                 android:textSize="35sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age in Hours"
                 android:textColor="@color/lightPurpleTextColor"
                 android:textSize="18sp" />
 
-         <TextView
+         <com.google.android.material.textview.MaterialTextView
                android:id="@+id/tvSelectedDateInDays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -140,7 +124,7 @@
                 android:textColor="@color/lightGreenTextColor"
                 android:textSize="35sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age in Days"
