@@ -90,7 +90,8 @@
                 android:layout_marginTop="20dp"
                 android:text="9957600"
                 android:textColor="@color/lightGreenTextColor"
-                android:textSize="35sp" />
+                android:textSize="35sp" 
+                android:textIsSelectable="true"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -106,7 +107,8 @@
                 android:layout_marginTop="20dp"
                 android:text="165960"
                 android:textColor="@color/lightGreenTextColor"
-                android:textSize="35sp" />
+                android:textSize="35sp" 
+                android:textIsSelectable="true"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -122,7 +124,8 @@
                 android:layout_marginTop="20dp"
                 android:text="6915"
                 android:textColor="@color/lightGreenTextColor"
-                android:textSize="35sp" />
+                android:textSize="35sp" 
+                android:textIsSelectable="true"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
