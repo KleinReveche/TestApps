@@ -65,10 +65,28 @@ class MaterialAgeCalculator : AppCompatActivity() {
         datePicker.addOnPositiveButtonClickListener {
             calendar.timeInMillis = it
             val selectedDate = datePicker.selection
-            Toast.makeText(
-                                    this,
-                                    "Selected Birthdate is " + selectedDate.toString(),
-                                    Toast.LENGTH_LONG
+
+            currentDate?.let {
+                val selectedDateInMinutes = selectedDate!!.div(60000)
+
+                val differenceInMinutes =
+                    currentDateInMinutes?.minus(selectedDateInMinutes)
+                val selectedDateInHours =
+                    differenceInMinutes?.div(60)
+                val selectedDateInDays =
+                    selectedDateInHours?.div(24)
+
+
+                tvSelectedDate?.text = sdf.parse(sdf.format(selectedDate))?.toString()
+                tvSelectedDateInMinutes?.text = differenceInMinutes.toString()
+                tvSelectedDateInHours?.text = selectedDateInHours.toString()
+                tvSelectedDateInDays?.text = selectedDateInDays.toString()
+            }
+
+
+
+            Toast.makeText(this,
+                "Selected Birthdate is " + selectedDate.toString(), Toast.LENGTH_LONG
             ).show()
         }
 
