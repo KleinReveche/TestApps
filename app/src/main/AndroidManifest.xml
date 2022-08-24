@@ -36,6 +36,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+	<activity
+            android:name=".miniapps.MatwrialAgeCalculator"
+            android:exported="true"
+            android:label="@string/age_calc"
+            android:theme="@style/Theme.TestApps">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
     </application>
 
 </manifest>
