@@ -51,15 +51,16 @@ class MaterialAgeCalculator : AppCompatActivity() {
 
     private fun mBtnShowDatePicker() {
         val calendar = Calendar.getInstance()
-        val calendarConstraintBuilder = CalendarConstraints.Builder()
+        val endDate = calendar.timeInMillis.minus(86400000)
+        val calendarConstraintBuilder = CalendarConstraints.Builder().setOpenAt(endDate).setEnd(endDate)
         val validators = ArrayList<CalendarConstraints.DateValidator>()
         validators.add(DateValidatorPointBackward.now())
         calendarConstraintBuilder.setValidator(CompositeDateValidator.allOf(validators))
 
         val datePicker = MaterialDatePicker.Builder.datePicker()
-            .setTitleText("Select your Birthdate")
+            .setTitleText(R.string.app_calc_datepicker_title)
             .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
-            .setCalendarConstraints(calendarConstraintBuilder.setEnd(System.currentTimeMillis().minus(8640000)).build())
+            .setCalendarConstraints(calendarConstraintBuilder.build())
             .build()
 
         datePicker.addOnPositiveButtonClickListener {
@@ -76,18 +77,18 @@ class MaterialAgeCalculator : AppCompatActivity() {
                 val selectedDateInDays =
                     selectedDateInHours?.div(24)
 
-
-                tvSelectedDate?.text = sdf.parse(sdf.format(selectedDate))?.toString()
+                val selectedDateFormatted = sdf.format(selectedDate)?.toString()
+                tvSelectedDate?.text = selectedDateFormatted
                 tvSelectedDateInMinutes?.text = differenceInMinutes.toString()
                 tvSelectedDateInHours?.text = selectedDateInHours.toString()
                 tvSelectedDateInDays?.text = selectedDateInDays.toString()
+
+                Toast.makeText(
+                    this,
+                    "Selected Birthdate is $selectedDateFormatted", Toast.LENGTH_LONG
+                ).show()
             }
 
-
-
-            Toast.makeText(this,
-                "Selected Birthdate is " + selectedDate.toString(), Toast.LENGTH_LONG
-            ).show()
         }
 
         datePicker.show(supportFragmentManager, datePicker.tag)
