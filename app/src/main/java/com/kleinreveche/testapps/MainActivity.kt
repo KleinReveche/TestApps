@@ -12,7 +12,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.kleinreveche.testapps.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class cMainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
