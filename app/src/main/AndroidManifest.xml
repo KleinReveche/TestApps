@@ -37,7 +37,7 @@
                 android:value="" />
         </activity>
 	<activity
-            android:name=".miniapps.MatwrialAgeCalculator"
+            android:name=".miniapps.MaterialAgeCalculator"
             android:exported="true"
             android:label="@string/age_calc"
             android:theme="@style/Theme.TestApps">
