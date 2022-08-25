@@ -26,7 +26,7 @@ class MaterialAgeCalculator : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_age_calculator)
+        setContentView(R.layout.activity_material_age_calculator)
 
         tvSelectedDate = findViewById(R.id.tvSelectedDate)
         tvSelectedDateInMinutes = findViewById(R.id.tvSelectedDateInMinutes)
