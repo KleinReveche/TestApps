@@ -54,7 +54,7 @@ class MaterialAgeCalculator : AppCompatActivity() {
         val endDate = calendar.timeInMillis.minus(86400000)
         val calendarConstraintBuilder = CalendarConstraints.Builder().setOpenAt(endDate).setEnd(endDate)
         val validators = ArrayList<CalendarConstraints.DateValidator>()
-        validators.add(DateValidatorPointBackward.now())
+        validators.add(DateValidatorPointBackward.before(endDate))
         calendarConstraintBuilder.setValidator(CompositeDateValidator.allOf(validators))
 
         val datePicker = MaterialDatePicker.Builder.datePicker()
