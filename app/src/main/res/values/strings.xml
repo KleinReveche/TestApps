@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">Test Apps</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="age_calc_legacy">Age Calculator Legacy</string>
+    <string name="app_calc_datepicker_title">Select Your Birthdate</string>
+    <string name="age_calc">Age Calculator</string>string>
     <string name="age_calc_title">Calculate Your Age</string>
-    <string name="age_calc_subtitle">in Minutes!</string>
     <string name="age_calc_datepicker">Select Date</string>
+    <string name="age_calc_time_included">Time Included</string>
+    <string name="age_calc_selected_date">Selected Date</string>
+    <string name="age_in_minutes">Age in Minutes</string>
+    <string name="age_in_hours">Age in Hours</string>
+    <string name="age_in_days">Age in Days</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet,
+    </string>
 </resources>
