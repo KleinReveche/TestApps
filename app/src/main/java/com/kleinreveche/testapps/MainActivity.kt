@@ -16,7 +16,7 @@ import com.kleinreveche.testapps.databinding.ActivityMainBinding
 import com.kleinreveche.testapps.features.age_calculator.MaterialAgeCalculator
 import com.kleinreveche.testapps.features.age_calculator.AgeCalculator
 import com.kleinreveche.testapps.features.dice.DiceRoller
-import com.kleinreveche.testapps.features.dessert.Dessert
+import com.kleinreveche.testapps.features.dessert.DessertClicker
 
 class MainActivity : AppCompatActivity() {
 
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 startDiceRoller.setOnClickListener { Intent(this, DiceRoller::class.java).also {startActivity(it)} }
                         
         val startDessertClicker: Button = findViewById(R.id.btnDessertClicker)
-                rollButton.setOnClickListener { Intent(this, DessertClicker::class.java).also {startActivity(it)} }
+                startDessertClicker.setOnClickListener { Intent(this, DessertClicker::class.java).also {startActivity(it)} }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
