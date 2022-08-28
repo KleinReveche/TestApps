@@ -30,6 +30,10 @@
         android:textColor="@color/white"
         android:textSize="18sp"/>
         
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+                
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAgeCalcLegacy"
         style="@style/Widget.Material3.Button.Icon"
@@ -38,6 +42,10 @@
         android:text="@string/age_calc_legacy"
         android:textColor="@color/white"
         android:textSize="18sp"/>
+        
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
         
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDiceRoller"
@@ -48,6 +56,10 @@
         android:textColor="@color/white"
         android:textSize="18sp"/>
         
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />    
+        
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDessertClicker"
         style="@style/Widget.Material3.Button.Icon"
@@ -57,6 +69,9 @@
         android:textColor="@color/white"
         android:textSize="18sp"/>
         
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />        
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_app_bar"
         android:layout_width="match_parent"
