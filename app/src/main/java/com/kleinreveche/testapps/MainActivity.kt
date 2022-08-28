@@ -1,6 +1,7 @@
 package com.kleinreveche.testapps
 
 import android.content.Intent
+import android.widget.Button
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +16,7 @@ import com.kleinreveche.testapps.databinding.ActivityMainBinding
 import com.kleinreveche.testapps.features.age_calculator.MaterialAgeCalculator
 import com.kleinreveche.testapps.features.age_calculator.AgeCalculator
 import com.kleinreveche.testapps.features.dice.DiceRoller
-import com.kleinreveche.testapps.features.dessert.DessertClicker
+import com.kleinreveche.testapps.features.dessert.Dessert
 
 class MainActivity : AppCompatActivity() {
 
