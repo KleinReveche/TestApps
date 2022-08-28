@@ -21,6 +21,42 @@
 
     <include layout="@layout/content_main" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgeCalc"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_calc"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+        
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgeCalcLegacy"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_calc_legacy"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+        
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDiceRoller"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dice_roller"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+        
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDessertClicker"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessert_clicker"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+        
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_app_bar"
         android:layout_width="match_parent"

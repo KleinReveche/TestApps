@@ -1,5 +1,6 @@
 package com.kleinreveche.testapps
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.kleinreveche.testapps.databinding.ActivityMainBinding
+import com.kleinreveche.testapps.features.age_calculator.MaterialAgeCalculator
+import com.kleinreveche.testapps.features.age_calculator.AgeCalculator
+import com.kleinreveche.testapps.features.dice.DiceRoller
+import com.kleinreveche.testapps.features.dessert.DessertClicker
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +40,18 @@ class MainActivity : AppCompatActivity() {
                     .setAnchorView(R.id.fab)
                     .setAction("Action", null).show()
         }
+        
+        val startAgeCalc: Button = findViewById(R.id.btnAgeCalc)
+        startAgeCalc.setOnClickListener { Intent(this, MaterialAgeCalculator::class.java).also {startActivity(it)}}
+        
+        val startAgeCalcLegacy: Button = findViewById(R.id.btnAgeCalcLegacy)
+                startAgeCalcLegacy.setOnClickListener { Intent(this, AgeCalculator::class.java).also {startActivity(it)} }
+        
+        val startDiceRoller: Button = findViewById(R.id.btnDiceRoller)
+                startDiceRoller.setOnClickListener { Intent(this, DiceRoller::class.java).also {startActivity(it)} }
+                        
+        val startDessertClicker: Button = findViewById(R.id.btnDessertClicker)
+                rollButton.setOnClickListener { Intent(this, DessertClicker::class.java).also {startActivity(it)} }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -58,4 +75,7 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+    
+    
+    
 }
