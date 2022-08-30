@@ -15,8 +15,8 @@
         android:theme="@style/Theme.TestApps"
         tools:targetApi="33">
         <activity
-            android:name=".NotesActivity"
-            android:exported="false"
+            android:name=".features.notes.NotesActivity"
+            android:exported="true"
             android:label="@string/title_activity_notes"
             android:theme="@style/Theme.TestApps" />
         <activity
