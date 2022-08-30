@@ -68,7 +68,7 @@ fun NoteItem(
             Text(
                 text = note.title,
                 style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.Primary,
+                color = MaterialTheme.colorScheme.primary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
@@ -76,7 +76,7 @@ fun NoteItem(
             Text(
                 text = note.content,
                 style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.Primary,
+                color = MaterialTheme.colorScheme.primary,
                 maxLines = 10,
                 overflow = TextOverflow.Ellipsis
             )
