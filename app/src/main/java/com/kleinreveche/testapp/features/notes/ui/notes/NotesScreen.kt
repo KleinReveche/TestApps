@@ -35,6 +35,7 @@ fun NotesScreen(
     val snackbarHostState = remember { SnackbarHostState() }
 
     Scaffold(
+        snackbarHost = { SnackbarHost(snackbarHostState) },
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
@@ -45,7 +46,7 @@ fun NotesScreen(
                 Icon(imageVector = Icons.Default.Add, contentDescription = "Add Note")
             }
         }
-    ) {
+    ) { it -> it.calculateBottomPadding()
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -107,8 +108,10 @@ fun NotesScreen(
                                     message = "Note Deleted",
                                     actionLabel = "Undo"
                                 )
-                                if(result == SnackbarResult.ActionPerformed) {
-                                    viewModel.onEvent(NotesEvent.RestoreNote)
+
+                                when (result) {
+                                    SnackbarResult.Dismissed -> TODO()
+                                    SnackbarResult.ActionPerformed -> viewModel.onEvent(NotesEvent.RestoreNote)
                                 }
                             }
                         }

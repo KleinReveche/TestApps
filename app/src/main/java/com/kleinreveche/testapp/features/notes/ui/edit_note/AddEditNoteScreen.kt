@@ -68,7 +68,7 @@ fun AddEditNoteScreen(
                 },
                 contentColor = MaterialTheme.colorScheme.primary
             ) {
-                Icon(imageVector = Icons.Default.Save, contentDescription = "Save note")
+                Icon(imageVector = Icons.Default.Save, contentDescription = "Save Note")
             }
         }
     ) {
@@ -140,7 +140,7 @@ fun AddEditNoteScreen(
                 },
                 isHintVisible = contentState.isHintVisible,
                 textStyle = MaterialTheme.typography.bodyMedium,
-                modifier = Modifier.fillMaxHeight()
+                modifier = Modifier.fillMaxSize()
             )
         }
     }

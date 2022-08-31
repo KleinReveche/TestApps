@@ -1,4 +1,4 @@
-package com.kleinreveche.testapp.features.main.ui
+package com.kleinreveche.testapp.features.age_calculator.ui
 
 import androidx.compose.animation.core.FastOutLinearInEasing
 import androidx.compose.foundation.layout.WindowInsets

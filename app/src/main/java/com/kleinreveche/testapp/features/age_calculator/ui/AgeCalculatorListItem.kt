@@ -1,4 +1,4 @@
-package com.kleinreveche.testapp.features.main.ui
+package com.kleinreveche.testapp.ageCalculatorItems.age_calculator.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,37 +16,37 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.kleinreveche.testapp.features.main.model.Features
+import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorsFeatures
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FeatureItem(
-    feature: Features,
-    onClick: (feature: Features) -> Unit
+fun AgeCalculatorListItem(
+    ageCalculatorItem: AgeCalculatorsFeatures,
+    onClick: (ageCalculatorItem: AgeCalculatorsFeatures) -> Unit
 ) {
     OutlinedCard(
-        onClick = { onClick(feature) },
+        onClick = { onClick(ageCalculatorItem) },
         modifier = Modifier.fillMaxWidth()
     ) {
         Row(
-            modifier = Modifier.padding(FeatureItemPadding),
-            horizontalArrangement = Arrangement.spacedBy(FeatureItemPadding),
+            modifier = Modifier.padding(AgeCalculatorListItemPadding),
+            horizontalArrangement = Arrangement.spacedBy(AgeCalculatorListItemPadding),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Column(
                 modifier = Modifier.weight(1f, fill = true),
-                verticalArrangement = Arrangement.spacedBy(FeatureItemTextPadding)
+                verticalArrangement = Arrangement.spacedBy(AgeCalculatorListItemTextPadding)
             ) {
                 Text(
-                    text = feature.name,
+                    text = ageCalculatorItem.name,
                     style = MaterialTheme.typography.titleSmall
                 )
                 Text(
-                    text = feature.artifact,
+                    text = ageCalculatorItem.artifact,
                     style = MaterialTheme.typography.bodySmall,
                 )
                         Text(
-                        text = feature.date,
+                        text = ageCalculatorItem.date,
                 style = MaterialTheme.typography.bodySmall
             )
         }
@@ -59,5 +59,5 @@ fun FeatureItem(
     }
 }
 
-private val FeatureItemPadding = 16.dp
-private val FeatureItemTextPadding = 8.dp
+private val AgeCalculatorListItemPadding = 16.dp
+private val AgeCalculatorListItemTextPadding = 8.dp

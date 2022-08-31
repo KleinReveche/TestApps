@@ -9,24 +9,15 @@ data class Features(
 
 private const val basePackage = "com.kleinreveche.testapp"
 
-private const val AgeCalculatorName = "Age Calculator (Material)"
+
+private const val AgeCalculatorName = "Age Calculators"
 private const val AgeCalculatorArtifact = "$basePackage.features.age_calculator"
 
 val AgeCalculatorFeature = Features(
     id = 1,
     name = AgeCalculatorName,
     artifact = AgeCalculatorArtifact,
-    date = "08/25/2022"
-)
-
-private const val AgeCalculatorLegacyName = "Age Calculator Legacy"
-private const val AgeCalculatorLegacyArtifact = "$basePackage.features.age_calculator"
-
-val AgeCalculatorLegacyFeature = Features(
-    id = 2,
-    name = AgeCalculatorLegacyName,
-    artifact = AgeCalculatorLegacyArtifact,
-    date = "08/19/2022"
+    date = " "
 )
 
 private const val DiceRollerName = "Dice Roller"
@@ -60,7 +51,7 @@ val CupcakeFeature = Features(
 )
 
 private const val CafeteriaName = "Cafeteria"
-private const val CafeteriaArtifact = "$basePackage.features.lunch_tray"
+private const val CafeteriaArtifact = "$basePackage.features.cafeteria"
 
 val CafeteriaFeature = Features(
     id = 6,
@@ -81,7 +72,6 @@ val NotesFeature = Features(
 
 val FeatureList = listOf(
     AgeCalculatorFeature,
-    AgeCalculatorLegacyFeature,
     DiceRollerFeature,
     DessertClickerFeature,
     CupcakeFeature,

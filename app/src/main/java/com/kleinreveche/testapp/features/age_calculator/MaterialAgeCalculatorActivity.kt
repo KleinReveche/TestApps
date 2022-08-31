@@ -97,5 +97,3 @@ class MaterialAgeCalculatorActivity : AppCompatActivity() {
     }
 
 }
-
-const val AgeCalculatorFeatureRoute = "ageCalculator"

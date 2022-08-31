@@ -1,4 +1,4 @@
-package com.kleinreveche.testapp.features.main.ui
+package com.kleinreveche.testapp.features.age_calculator.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Spacer
@@ -19,29 +19,31 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.kleinreveche.testapp.R
+import com.kleinreveche.testapp.ageCalculatorItems.age_calculator.ui.AgeCalculatorListItem
+import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorsFeatures
 import com.kleinreveche.testapp.features.main.model.Features
 
 @Composable
 @OptIn(ExperimentalFoundationApi::class)
-fun Feature(
-    features: List<Features>,
-    onSpecificationClick: (feature: Features) -> Unit
+fun AgeCalculatorListComponent(
+    ageCalculatorFeatureList: List<AgeCalculatorsFeatures>,
+    onSpecificationClick: (ageCalculatorFeatureList: AgeCalculatorsFeatures) -> Unit
 ) {
-    FeatureScaffold(
+    AgeCalculatorListScaffold(
         topBarTitle = stringResource(id = R.string.app_name)
     ) { paddingValues ->
         LazyColumn(
             content = {
                 item {
                     Text(
-                        text = stringResource(id = R.string.features),
+                        text = stringResource(id = R.string.age_calc_list),
                         style = MaterialTheme.typography.bodyLarge
                     )
                     Spacer(modifier = Modifier.height(FeaturePadding))
                 }
-                items(features) { feature ->
-                    FeatureItem(
-                        feature = feature,
+                items(ageCalculatorFeatureList) { ageCalculatorFeatureList ->
+                    AgeCalculatorListItem(
+                        ageCalculatorItem = ageCalculatorFeatureList,
                         onClick = onSpecificationClick
                     )
                     Spacer(modifier = Modifier.height(FeatureItemPadding))

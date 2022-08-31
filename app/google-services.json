@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "22138611655",
+    "project_id": "silken-glyph-242003",
+    "storage_bucket": "silken-glyph-242003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22138611655:android:a956e3d30cfb62ee951be2",
+        "android_client_info": {
+          "package_name": "com.kleinreveche.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22138611655-mu7sjamq95glad38mrb3qqacu9mpfeo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kleinreveche.testapp",
+            "certificate_hash": "6c3a54abd4fbb24aa922c5f30265ead2b18271df"
+          }
+        },
+        {
+          "client_id": "22138611655-n3d45jgbbc56557jdnm26ipnlkq7rr0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_FwkhYhFuY7ag6aAI_3A400SbKkicSzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22138611655-n3d45jgbbc56557jdnm26ipnlkq7rr0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
