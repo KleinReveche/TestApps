@@ -10,7 +10,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.kleinreveche.testapp.features.main.NavGraph
 import com.kleinreveche.testapp.ui.theme.TestAppsTheme
 import dagger.hilt.android.AndroidEntryPoint
