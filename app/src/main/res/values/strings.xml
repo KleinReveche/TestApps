@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test Apps</string>
+    <string name="app_name">Test App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -62,7 +62,7 @@
         <item quantity="other">%d cupcakes</item>
     </plurals>
 
-    <string name="lunch_tray">Cafeteria</string>
+    <string name="cafeteria">Cafeteria</string>
     <string name="choose_accompaniment">Choose Accompaniment</string>
     <string name="choose_entree">Choose Entree</string>
     <string name="choose_side_dish">Choose Side Dish</string>
