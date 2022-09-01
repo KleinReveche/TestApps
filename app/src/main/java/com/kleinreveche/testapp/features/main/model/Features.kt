@@ -1,4 +1,4 @@
-package com.kleinreveche.testapp.features.main.model
+ppackage com.kleinreveche.testapp.features.main.model
 
 data class Features(
     val id: Int,
@@ -71,7 +71,7 @@ val NotesFeature = Features(
 )
 
 private const val LemonadeName = "Lemonade"
-private const val LemonadeArtifact = "$basepackage.features.lemonade"
+private const val LemonadeArtifact = "$basePackage.features.lemonade"
 
 val LemonadeFeature = Features(
     id = 8,
