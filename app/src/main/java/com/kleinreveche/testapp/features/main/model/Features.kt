@@ -70,12 +70,23 @@ val NotesFeature = Features(
     date = "08/30/2022"
 )
 
+private const val LemonadeName = "Lemonade"
+private const val LemonadeArtifact = "$basepackage.features.lemonade"
+
+val LemonadeFeature = Features(
+    id = 8,
+    name = LemonadeName,
+    artifact = LemonadeArtifact,
+    date = "09/01/2022"
+)
+
 val FeatureList = listOf(
     AgeCalculatorFeature,
     DiceRollerFeature,
     DessertClickerFeature,
     CupcakeFeature,
     CafeteriaFeature,
-    NotesFeature
+    NotesFeature,
+    LemonadeFeature
     )
 
