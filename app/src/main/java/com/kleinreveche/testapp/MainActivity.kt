@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
 
                 // Remember a SystemUiController
                 val systemUiController = rememberSystemUiController()
-                val useDarkIcons = isSystemInDarkTheme()
+                val useDarkIcons = MaterialTheme.colorScheme.isLight()
                 val systemBarColor = MaterialTheme.colorScheme.surface
 
                 SideEffect {
@@ -54,6 +54,10 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Composable
+fun ColorScheme.isLight() = this.background.luminance() > 0.5
+
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
