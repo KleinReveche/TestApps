@@ -26,8 +26,8 @@ class MainActivity : ComponentActivity() {
 
                 // Remember a SystemUiController
                 val systemUiController = rememberSystemUiController()
-                val useDarkIcons = MaterialTheme.colors.isLight
-                val systemBarColor = MaterialTheme.colors.surface
+                val useDarkIcons = MaterialTheme.colorScheme.isLight
+                val systemBarColor = MaterialTheme.colorScheme.surface
 
                 SideEffect {
                     // Update all of the system bar colors to be transparent, and use
