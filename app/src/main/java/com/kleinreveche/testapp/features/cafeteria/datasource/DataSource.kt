@@ -11,6 +11,11 @@ object DataSource {
 
     val entreeMenuItems = listOf(
         EntreeItem(
+            name = "Adobo",
+            description = "Classic Homemade Adobo",
+            price = 15.00,
+        ),
+        EntreeItem(
             name = "Cauliflower",
             description = "Whole cauliflower, brined, roasted, and deep fried",
             price = 7.00,
@@ -35,6 +40,11 @@ object DataSource {
     )
 
     val sideDishMenuItems = listOf(
+       SideDishItem(
+            name = "Rice",
+            description = "Plain White Jasmine Rice",
+            price = 2.50,
+        ),
         SideDishItem(
             name = "Summer Salad",
             description = "Heirloom tomatoes, butter lettuce, peaches, avocado, balsamic dressing",
@@ -58,6 +68,11 @@ object DataSource {
     )
 
     val accompanimentMenuItems = listOf(
+        AccompanimentItem(
+            name = "Lumpia Rolls",
+            description = "Classic Filipino Lumpia Rolls",
+            price = 0.50,
+        ),
         AccompanimentItem(
             name = "Lunch Roll",
             description = "Fresh baked roll made in house",
