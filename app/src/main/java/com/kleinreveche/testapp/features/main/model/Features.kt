@@ -1,4 +1,4 @@
-ppackage com.kleinreveche.testapp.features.main.model
+package com.kleinreveche.testapp.features.main.model
 
 data class Features(
     val id: Int,
