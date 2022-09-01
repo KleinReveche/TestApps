@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
                         darkIcons = useDarkIcons
                     )
 
-l                    // setStatusBarsColor() and setNavigationBarsColor() also exist
+                    // setStatusBarsColor() and setNavigationBarsColor() also exist
                 }
 
                 // A surface container using the 'background' color from the theme
