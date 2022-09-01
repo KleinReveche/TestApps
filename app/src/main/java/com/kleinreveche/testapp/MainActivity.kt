@@ -13,6 +13,7 @@ import androidx.core.view.WindowCompat
 import com.kleinreveche.testapp.features.main.NavGraph
 import com.kleinreveche.testapp.ui.theme.TestAppsTheme
 import dagger.hilt.android.AndroidEntryPoint
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -22,6 +23,23 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             TestAppsTheme {
+
+                // Remember a SystemUiController
+                val systemUiController = rememberSystemUiController()
+                val useDarkIcons = MaterialTheme.colors.isLight
+                val systemBarColor = MaterialTheme.colors.surface
+
+                SideEffect {
+                    // Update all of the system bar colors to be transparent, and use
+                    // dark icons if we're in light theme
+                    systemUiController.setSystemBarsColor(
+                        color = systemBarColor,
+                        darkIcons = useDarkIcons
+                    )
+
+                    // setStatusBarsColor() and setNavigationBarsColor() also exist
+                }
+
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),

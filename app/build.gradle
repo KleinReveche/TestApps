@@ -94,4 +94,7 @@ dependencies {
     // Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:2.4.3"
 
+    // SystemUI Controller
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.25.1"
+
 }
