@@ -9,6 +9,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
 import com.kleinreveche.testapp.features.main.NavGraph
@@ -38,7 +39,7 @@ class MainActivity : ComponentActivity() {
                         darkIcons = useDarkIcons
                     )
 
-                    // setStatusBarsColor() and setNavigationBarsColor() also exist
+l                    // setStatusBarsColor() and setNavigationBarsColor() also exist
                 }
 
                 // A surface container using the 'background' color from the theme
