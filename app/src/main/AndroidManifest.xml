@@ -83,7 +83,20 @@
             android:name="com.kleinreveche.testapp.features.notes.NotesActivity"
             android:exported="false"
             android:label="@string/title_activity_notes"
-            android:theme="@style/Theme.TestApps" />
+            android:theme="@style/Theme.TestApps" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kleinreveche.testapp.features.lemonade.LemonadeActivity"
+            android:exported="true"
+            android:label="@string/lemonade"
+            android:theme="@style/Theme.TestApps">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
