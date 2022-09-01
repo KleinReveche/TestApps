@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
@@ -27,8 +28,8 @@ class MainActivity : ComponentActivity() {
 
                 // Remember a SystemUiController
                 val systemUiController = rememberSystemUiController()
-                val useDarkIcons = MaterialTheme.colorScheme.isLight
-                val systemBarColor = isSystemInDarkTheme()
+                val useDarkIcons = isSystemInDarkTheme()
+                val systemBarColor = MaterialTheme.colorScheme.surface
 
                 SideEffect {
                     // Update all of the system bar colors to be transparent, and use
