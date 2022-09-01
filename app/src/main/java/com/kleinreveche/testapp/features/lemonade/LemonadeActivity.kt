@@ -58,7 +58,7 @@ fun LemonApp() {
 
     Surface(
         modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colors.background
+        color = MaterialTheme.colorScheme.background
     ) {
         when (currentStep) {
             1 -> {
@@ -73,7 +73,7 @@ fun LemonApp() {
                         // Each time a lemon is picked from the tree, get a new random number
                         // between 2 and 4 (inclusive) for the number of times the lemon needs
                         // to be squeezed to turn into lemonade
-                        squeezeCount = (2..4).random()
+                        squeezeCount = (8..20).random()
                     }
                 )
             }
@@ -169,7 +169,7 @@ fun LemonTextAndImage(
 @Preview
 @Composable
 fun LemonPreview() {
-    LemonadeTheme() {
+    TestAppsTheme() {
         LemonApp()
     }
 }

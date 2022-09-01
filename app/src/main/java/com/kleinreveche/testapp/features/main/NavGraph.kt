@@ -20,7 +20,7 @@ import com.kleinreveche.testapp.features.main.model.*
 import com.kleinreveche.testapp.features.main.ui.Feature
 import com.kleinreveche.testapp.features.notes.NotesApp
 import com.kleinreveche.testapp.features.notes.NotesFeatureRoute
-import com.kleinreveche.testapp.features.lemonade.LemonadeApp
+import com.kleinreveche.testapp.features.lemonade.LemonApp
 import com.kleinreveche.testapp.features.lemonade.LemonadeFeatureRoute
 
 @Composable
@@ -53,7 +53,7 @@ fun NavGraph() {
         composable(CupcakeFeatureRoute) { CupcakeApp() }
         composable(CafeteriaFeatureRoute) { CafeteriaApp() }
         composable(NotesFeatureRoute) { NotesApp() }
-        composable(LemonadeFeatureRoute) { LemonadeApp() }
+        composable(LemonadeFeatureRoute) { LemonApp() }
     }
 }
 
