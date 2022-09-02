@@ -192,7 +192,7 @@ private fun UnscrambleFinalScoreDialog(
 @Preview(showBackground = true)
 @Composable
 fun UnscrambleGameScreenPreview() {
-    TestAppTheme() {
+    TestAppTheme {
         UnscrambleGameScreen()
     }
 }
