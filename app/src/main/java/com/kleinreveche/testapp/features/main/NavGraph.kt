@@ -4,9 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.kleinreveche.testapp.features.age_calculator.AgeCalculatorListNavGraph
-import com.kleinreveche.testapp.features.age_calculator.util.AgeCalculatorComposable
-import com.kleinreveche.testapp.features.age_calculator.util.AgeCalculatorFeatureRoute
+import com.kleinreveche.testapp.features.main.ui.feature_lists.age_calculator.AgeCalculatorListNavGraph
+import com.kleinreveche.testapp.features.main.ui.feature_lists.age_calculator.AgeCalculatorsFeatureListRoute
+import com.kleinreveche.testapp.features.main.ui.feature_lists.age_calculator.AgeCalculatorFeatureRoute
 import com.kleinreveche.testapp.features.cupcake.CupcakeApp
 import com.kleinreveche.testapp.features.cupcake.CupcakeFeatureRoute
 import com.kleinreveche.testapp.features.dessert.DessertClickerApp
@@ -32,8 +32,15 @@ fun NavGraph() {
     ) {
         composable(FeatureRoute) {
             Feature(
+                featureLists = FeatureListsOf,
+                onFeatureListClick = { featureList ->
+                    when (featureList) {
+                        AgeCalculatorsFeatureList -> navController.navigate(AgeCalculatorsFeatureListRoute)
+                        //EasterEggFeatureList -> navController.navigate(EasterEggFeatureListRoute)
+                    }
+                },
                 features = FeatureList,
-                onSpecificationClick = { feature ->
+                onFeatureClick = { feature ->
                     when (feature) {
                         AgeCalculatorFeature -> navController.navigate(AgeCalculatorFeatureRoute)
                         DiceRollerFeature -> navController.navigate(DiceRollerFeatureRoute)
@@ -46,6 +53,7 @@ fun NavGraph() {
                     }
                 }
             )
+
         }
         composable(AgeCalculatorFeatureRoute) { AgeCalculatorListNavGraph() }
         composable(DiceRollerFeatureRoute) { DiceRollerApp() }

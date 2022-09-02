@@ -6,26 +6,19 @@ data class AgeCalculatorsFeatures(
     val artifact: String,
     val date: String
 )
-
 private const val basePackage = "com.kleinreveche.testapp"
-
-private const val AgeCalculatorLegacyName = "Age Calculator Legacy"
-private const val AgeCalculatorLegacyArtifact = "$basePackage.features.age_calculator"
 
 val AgeCalculatorLegacyFeature = AgeCalculatorsFeatures(
     id = 1,
-    name = AgeCalculatorLegacyName,
-    artifact = AgeCalculatorLegacyArtifact,
+    name = "Age Calculator Legacy",
+    artifact = "$basePackage.features.age_calculator",
     date = "08/19/2022"
 )
 
-private const val AgeCalculatorName = "Age Calculator (Material)"
-private const val AgeCalculatorArtifact = "$basePackage.features.age_calculator"
-
 val AgeCalculatorFeature = AgeCalculatorsFeatures(
     id = 2,
-    name = AgeCalculatorName,
-    artifact = AgeCalculatorArtifact,
+    name = "Age Calculator (Material)",
+    artifact = "$basePackage.features.age_calculator",
     date = "08/25/2022"
 )
 

@@ -1,4 +1,4 @@
-package com.kleinreveche.testapp.features.main.ui
+package com.kleinreveche.testapp.features.main.ui.feature_lists.age_calculator
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Spacer
@@ -19,44 +19,32 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.kleinreveche.testapp.R
-import com.kleinreveche.testapp.features.main.model.FeatureListsData
-import com.kleinreveche.testapp.features.main.model.Features
-import com.kleinreveche.testapp.features.main.ui.feature_lists.FeatureListItem
-import com.kleinreveche.testapp.features.main.ui.features.FeatureItem
+import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorsFeatures
 
 @Composable
 @OptIn(ExperimentalFoundationApi::class)
-fun Feature(
-    featureLists: List<FeatureListsData>,
-    onFeatureListClick: (featureList: FeatureListsData) -> Unit,
-    features: List<Features>,
-    onFeatureClick: (feature: Features) -> Unit
+fun AgeCalculatorListComponent(
+    ageCalculatorFeatureList: List<AgeCalculatorsFeatures>,
+    onSpecificationClick: (ageCalculatorFeatureList: AgeCalculatorsFeatures) -> Unit
 ) {
-    FeatureScaffold(
+    AgeCalculatorListScaffold(
         topBarTitle = stringResource(id = R.string.app_name)
     ) { paddingValues ->
         LazyColumn(
             content = {
                 item {
                     Text(
-                        text = stringResource(id = R.string.features),
+                        text = stringResource(id = R.string.age_calc_list),
                         style = MaterialTheme.typography.bodyLarge
                     )
                     Spacer(modifier = Modifier.height(FeaturePadding))
                 }
-                items(featureLists) { featureList ->
-                    FeatureListItem(
-                        featureList = featureList,
-                        onClick = onFeatureListClick
+                items(ageCalculatorFeatureList) { ageCalculatorFeatureList ->
+                    AgeCalculatorListItem(
+                        ageCalculatorItem = ageCalculatorFeatureList,
+                        onClick = onSpecificationClick
                     )
-                    Spacer(modifier = Modifier.height(FeatureItemPadding))
-                }
-                items(features) { feature ->
-                    FeatureItem(
-                        feature = feature,
-                        onClick = onFeatureClick
-                    )
-                    Spacer(modifier = Modifier.height(FeatureItemPadding))
+                    Spacer(modifier = Modifier.height(FeatureItemListPadding))
                 }
             },
             contentPadding = WindowInsets.safeDrawing
@@ -75,4 +63,4 @@ fun Feature(
 }
 
 private val FeaturePadding = 16.dp
-private val FeatureItemPadding = 8.dp
+private val FeatureItemListPadding = 8.dp
