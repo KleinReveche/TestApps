@@ -3,7 +3,6 @@ package com.kleinreveche.testapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -13,7 +12,7 @@ import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
 import com.kleinreveche.testapp.features.main.NavGraph
-import com.kleinreveche.testapp.ui.theme.TestAppsTheme
+import com.kleinreveche.testapp.ui.theme.TestAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -24,7 +23,7 @@ class MainActivity : ComponentActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, true)
 
         setContent {
-            TestAppsTheme {
+            TestAppTheme {
 
                 // Remember a SystemUiController
                 val systemUiController = rememberSystemUiController()
@@ -61,7 +60,7 @@ fun ColorScheme.isLight() = this.background.luminance() > 0.5
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    TestAppsTheme {
+    TestAppTheme {
         NavGraph()
     }
 }

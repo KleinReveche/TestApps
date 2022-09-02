@@ -11,14 +11,14 @@ import com.kleinreveche.testapp.features.main.NavGraph
 fun AgeCalculatorComposable(){
     val context = LocalContext.current
     context.startActivity(Intent(context, MaterialAgeCalculatorActivity::class.java))
-    NavGraph()
+    AgeCalculatorListNavGraph()
 }
 
 @Composable
 fun AgeCalculatorLegacyComposable(){
     val context = LocalContext.current
     context.startActivity(Intent(context, AgeCalculatorLegacyActivity::class.java))
-    NavGraph()
+    AgeCalculatorListNavGraph()
 }
 
 

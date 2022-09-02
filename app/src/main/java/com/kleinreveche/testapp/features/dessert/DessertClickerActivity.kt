@@ -34,7 +34,7 @@ import androidx.core.content.ContextCompat.startActivity
 import com.kleinreveche.testapp.R
 import com.kleinreveche.testapp.features.dessert.data.Datasource.dessertList
 import com.kleinreveche.testapp.features.dessert.model.Dessert
-import com.kleinreveche.testapp.ui.theme.TestAppsTheme
+import com.kleinreveche.testapp.ui.theme.TestAppTheme
 
 // tag for logging
 private const val TAG = "TestApps - Dessert Clicker"
@@ -45,7 +45,7 @@ class DessertClickerActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "onCreate Called")
         setContent {
-            TestAppsTheme {
+            TestAppTheme {
                 DessertClickerApp(desserts = dessertList)
             }
         }
@@ -312,7 +312,7 @@ private fun DessertsSoldInfo(dessertsSold: Int, modifier: Modifier = Modifier) {
 @Preview
 @Composable
 fun MyDessertClickerAppPreview() {
-    TestAppsTheme {
+    TestAppTheme {
         DessertClickerApp(listOf(Dessert(R.drawable.cupcake, 5, 0)))
     }
 }

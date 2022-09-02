@@ -1,19 +1,18 @@
 package com.kleinreveche.testapp.features.cafeteria.ui
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.kleinreveche.testapp.features.cafeteria.datasource.DataSource
 import com.kleinreveche.testapp.features.cafeteria.model.MenuItem
 import com.kleinreveche.testapp.features.cafeteria.model.MenuItem.SideDishItem
 
+@Suppress("UNCHECKED_CAST")
 @Composable
 fun SideDishMenuScreen(
     options: List<SideDishItem>,
     onCancelButtonClicked: () -> Unit,
     onNextButtonClicked: () -> Unit,
-    onSelectionChanged: (SideDishItem) -> Unit,
-    modifier: Modifier = Modifier
+    onSelectionChanged: (SideDishItem) -> Unit
 ) {
     BaseMenuScreen(
         options = options,

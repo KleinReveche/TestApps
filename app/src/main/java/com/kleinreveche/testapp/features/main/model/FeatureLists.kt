@@ -14,14 +14,7 @@ val AgeCalculatorsFeatureList = FeatureListsData(
     artifact = "$basePackage.features"
 )
 
-val EasterEggFeatureList = FeatureListsData(
-    id = 1,
-    name = "Age Calculators",
-    artifact = "$basePackage.features"
-)
-
 val FeatureListsOf = listOf(
-    AgeCalculatorsFeatureList,
-    EasterEggFeatureList
+    AgeCalculatorsFeatureList
     )
 

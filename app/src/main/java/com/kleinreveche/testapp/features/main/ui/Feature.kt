@@ -25,7 +25,6 @@ import com.kleinreveche.testapp.features.main.ui.feature_lists.FeatureListItem
 import com.kleinreveche.testapp.features.main.ui.features.FeatureItem
 
 @Composable
-@OptIn(ExperimentalFoundationApi::class)
 fun Feature(
     featureLists: List<FeatureListsData>,
     onFeatureListClick: (featureList: FeatureListsData) -> Unit,

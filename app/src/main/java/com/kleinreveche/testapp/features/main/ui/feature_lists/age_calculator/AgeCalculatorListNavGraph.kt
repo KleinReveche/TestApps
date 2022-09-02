@@ -5,9 +5,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.kleinreveche.testapp.features.age_calculator.AgeCalculatorLegacyFeatureRoute
-import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorFeature
-import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorLegacyFeature
-import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorList
+import com.kleinreveche.testapp.features.main.model.AgeCalculatorFeature
+import com.kleinreveche.testapp.features.main.model.AgeCalculatorLegacyFeature
+import com.kleinreveche.testapp.features.main.model.AgeCalculatorList
 
 @Composable
 fun AgeCalculatorListNavGraph() {

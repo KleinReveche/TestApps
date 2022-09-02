@@ -26,13 +26,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kleinreveche.testapp.R
-import com.kleinreveche.testapp.ui.theme.TestAppsTheme
+import com.kleinreveche.testapp.ui.theme.TestAppTheme
 
 class DiceRollerActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            TestAppsTheme() {
+            TestAppTheme() {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

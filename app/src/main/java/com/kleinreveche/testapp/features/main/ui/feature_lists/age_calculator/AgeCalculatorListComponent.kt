@@ -1,6 +1,5 @@
 package com.kleinreveche.testapp.features.main.ui.feature_lists.age_calculator
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
@@ -19,15 +18,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.kleinreveche.testapp.R
-import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorsFeatures
+import com.kleinreveche.testapp.features.main.model.AgeCalculatorsFeatures
+import com.kleinreveche.testapp.features.main.ui.FeatureScaffold
 
 @Composable
-@OptIn(ExperimentalFoundationApi::class)
 fun AgeCalculatorListComponent(
     ageCalculatorFeatureList: List<AgeCalculatorsFeatures>,
     onSpecificationClick: (ageCalculatorFeatureList: AgeCalculatorsFeatures) -> Unit
 ) {
-    AgeCalculatorListScaffold(
+    FeatureScaffold(
         topBarTitle = stringResource(id = R.string.app_name)
     ) { paddingValues ->
         LazyColumn(

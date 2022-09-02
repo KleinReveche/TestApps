@@ -16,13 +16,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.kleinreveche.testapp.features.age_calculator.model.AgeCalculatorsFeatures
+import com.kleinreveche.testapp.features.main.model.AgeCalculatorsFeatures
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AgeCalculatorListItem(
-    ageCalculatorItem: AgeCalculatorsFeatures,
-    onClick: (ageCalculatorItem: AgeCalculatorsFeatures) -> Unit
+        ageCalculatorItem: AgeCalculatorsFeatures,
+        onClick: (ageCalculatorItem: AgeCalculatorsFeatures) -> Unit
 ) {
     OutlinedCard(
         onClick = { onClick(ageCalculatorItem) },

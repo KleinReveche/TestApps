@@ -22,6 +22,8 @@ import com.kleinreveche.testapp.features.notes.NotesApp
 import com.kleinreveche.testapp.features.notes.NotesFeatureRoute
 import com.kleinreveche.testapp.features.lemonade.LemonApp
 import com.kleinreveche.testapp.features.lemonade.LemonadeFeatureRoute
+import com.kleinreveche.testapp.features.unscramble.ui.UnscrambleGameScreen
+import com.kleinreveche.testapp.features.unscramble.ui.UnscrambleFeatureRoute
 
 @Composable
 fun NavGraph() {
@@ -36,19 +38,18 @@ fun NavGraph() {
                 onFeatureListClick = { featureList ->
                     when (featureList) {
                         AgeCalculatorsFeatureList -> navController.navigate(AgeCalculatorsFeatureListRoute)
-                        //EasterEggFeatureList -> navController.navigate(EasterEggFeatureListRoute)
                     }
                 },
                 features = FeatureList,
                 onFeatureClick = { feature ->
                     when (feature) {
-                        AgeCalculatorFeature -> navController.navigate(AgeCalculatorFeatureRoute)
                         DiceRollerFeature -> navController.navigate(DiceRollerFeatureRoute)
                         DessertClickerFeature -> navController.navigate(DessertClickerFeatureRoute)
                         CupcakeFeature -> navController.navigate(CupcakeFeatureRoute)
                         CafeteriaFeature -> navController.navigate(CafeteriaFeatureRoute)
                         NotesFeature -> navController.navigate(NotesFeatureRoute)
                         LemonadeFeature -> navController.navigate(LemonadeFeatureRoute)
+                        UnscrambleFeature -> navController.navigate(UnscrambleFeatureRoute)
                         else -> throw IllegalArgumentException("Unknown Feature")
                     }
                 }
@@ -62,6 +63,7 @@ fun NavGraph() {
         composable(CafeteriaFeatureRoute) { CafeteriaApp() }
         composable(NotesFeatureRoute) { NotesApp() }
         composable(LemonadeFeatureRoute) { LemonApp() }
+        composable(UnscrambleFeatureRoute) { UnscrambleGameScreen() }
     }
 }
 

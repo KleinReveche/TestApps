@@ -9,84 +9,62 @@ data class Features(
 
 private const val basePackage = "com.kleinreveche.testapp"
 
-
-private const val AgeCalculatorName = "Age Calculators"
-private const val AgeCalculatorArtifact = "$basePackage.features.age_calculator"
-
-val AgeCalculatorFeature = Features(
-    id = 1,
-    name = AgeCalculatorName,
-    artifact = AgeCalculatorArtifact,
-    date = " "
-)
-
-private const val DiceRollerName = "Dice Roller"
-private const val DiceRollerArtifact = "$basePackage.features.dice"
-
 val DiceRollerFeature = Features(
-    id = 3,
-    name = DiceRollerName,
-    artifact = DiceRollerArtifact,
+    id = 1,
+    name = "Dice Roller",
+    artifact = "$basePackage.features.dice",
     date = "08/28/2022"
 )
-
-private const val DessertClickerName = "Dessert Clicker"
-private const val DessertClickerArtifact = "$basePackage.features.dessert"
 
 val DessertClickerFeature = Features(
-    id = 4,
-    name = DessertClickerName,
-    artifact = DessertClickerArtifact,
+    id = 2,
+    name = "Dessert Clicker",
+    artifact = "$basePackage.features.dessert",
     date = "08/28/2022"
 )
 
-private const val CupcakeName = "Cupcake Shop"
-private const val CupcakeArtifact = "$basePackage.features.cupcake"
-
 val CupcakeFeature = Features(
-    id = 5,
-    name = CupcakeName,
-    artifact = CupcakeArtifact,
+    id = 3,
+    name = "Cupcake Shop",
+    artifact = "$basePackage.features.cupcake",
     date = "08/30/2022"
 )
-
-private const val CafeteriaName = "Cafeteria"
-private const val CafeteriaArtifact = "$basePackage.features.cafeteria"
 
 val CafeteriaFeature = Features(
-    id = 6,
-    name = CafeteriaName,
-    artifact = CafeteriaArtifact,
+    id = 4,
+    name = "Cafeteria",
+    artifact = "$basePackage.features.cafeteria",
     date = "08/30/2022"
 )
-
-private const val NotesName = "Notes"
-private const val NotesArtifact = "$basePackage.features.notes"
 
 val NotesFeature = Features(
-    id = 7,
-    name = NotesName,
-    artifact = NotesArtifact,
+    id = 5,
+    name = "Notes",
+    artifact = "$basePackage.features.notes",
     date = "08/30/2022"
 )
 
-private const val LemonadeName = "Lemonade"
-private const val LemonadeArtifact = "$basePackage.features.lemonade"
-
 val LemonadeFeature = Features(
-    id = 8,
-    name = LemonadeName,
-    artifact = LemonadeArtifact,
+    id = 6,
+    name = "Lemonade",
+    artifact = "$basePackage.features.lemonade",
     date = "09/01/2022"
 )
 
+val UnscrambleFeature = Features(
+    id = 7,
+    name = "Unscramble",
+    artifact = "$basePackage.features.unscramble",
+    date = "09/02/2022"
+)
+
 val FeatureList = listOf(
-    AgeCalculatorFeature,
     DiceRollerFeature,
     DessertClickerFeature,
     CupcakeFeature,
     CafeteriaFeature,
     NotesFeature,
-    LemonadeFeature
+    LemonadeFeature,
+    UnscrambleFeature
     )
 
