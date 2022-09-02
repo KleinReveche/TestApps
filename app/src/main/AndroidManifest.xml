@@ -12,13 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestApps"
+        android:theme="@style/Theme.TestApp"
         tools:targetApi="33">
         <activity
             android:name="com.kleinreveche.testapp.features.age_calculator.AgeCalculatorLegacyActivity"
             android:exported="true"
             android:label="@string/age_calc_legacy"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -27,7 +27,7 @@
             android:name="com.kleinreveche.testapp.features.age_calculator.MaterialAgeCalculatorActivity"
             android:exported="true"
             android:label="@string/age_calc"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -36,7 +36,7 @@
             android:name="com.kleinreveche.testapp.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,7 +47,7 @@
             android:name="com.kleinreveche.testapp.features.dessert.DessertClickerActivity"
             android:exported="true"
             android:label="@string/dessert_clicker"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -56,7 +56,7 @@
             android:name="com.kleinreveche.testapp.features.dice.DiceRollerActivity"
             android:exported="true"
             android:label="@string/dice_roller"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -65,7 +65,7 @@
             android:name="com.kleinreveche.testapp.features.cupcake.CupcakeStoreActivity"
             android:exported="true"
             android:label="@string/cupcakes"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -74,7 +74,7 @@
             android:name="com.kleinreveche.testapp.features.cafeteria.CafeteriaActivity"
             android:exported="true"
             android:label="@string/cafeteria"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -83,7 +83,7 @@
             android:name="com.kleinreveche.testapp.features.notes.NotesActivity"
             android:exported="false"
             android:label="@string/title_activity_notes"
-            android:theme="@style/Theme.TestApps" >
+            android:theme="@style/Theme.TestApp" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -92,7 +92,7 @@
             android:name="com.kleinreveche.testapp.features.lemonade.LemonadeActivity"
             android:exported="true"
             android:label="@string/lemonade"
-            android:theme="@style/Theme.TestApps">
+            android:theme="@style/Theme.TestApp">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
