@@ -59,11 +59,12 @@ class UnscrambleGameViewModel : ViewModel() {
                 currentWord.length == 4 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_FOUR).toInt()
                 currentWord.length == 5 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_FIVE).toInt()
                 currentWord.length == 6 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_SIX).toInt()
-                currentWord.length == 7 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_EIGHT).toInt()
-                currentWord.length == 8 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_NINE).toInt()
-                currentWord.length == 9 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_TEN).toInt()
-                currentWord.length == 10 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_ELEVEN).toInt()
-                currentWord.length >= 11 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_TWELVE).toInt()
+                currentWord.length == 7 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_SEVEN).toInt()
+                currentWord.length == 8 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_EIGHT).toInt()
+                currentWord.length == 9 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_NINE).toInt()
+                currentWord.length == 10 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_TEN).toInt()
+                currentWord.length == 11 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_ELEVEN).toInt()
+                currentWord.length >= 12 -> updatedScore = _uiState.value.score.plus(SCORE_INCREASE).times(SCORE_MULTIPLIER_TWELVE).toInt()
             }
             updateGameState(updatedScore)
         } else {
